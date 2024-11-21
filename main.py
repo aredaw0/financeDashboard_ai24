@@ -6,7 +6,9 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 import numpy as np
 import requests
 
-NEWS_API_KEY = "b4efb84bfc22478fb8ca7308c585894a"
+import streamlit as st
+NEWS_API_KEY = st.secrets["NEWS_API_KEY"]
+
 
 def get_financial_news(query, api_key, max_results=3):
     financial_domains = "bloomberg.com,cnbc.com,reuters.com,wsj.com,marketwatch.com,ft.com"
