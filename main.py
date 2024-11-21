@@ -6,7 +6,6 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 import numpy as np
 import requests
 
-import streamlit as st
 NEWS_API_KEY = st.secrets["NEWS_API_KEY"]
 
 
